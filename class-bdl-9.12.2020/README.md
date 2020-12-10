@@ -113,8 +113,9 @@ if I want a second space I have to use a tag like: <br>
 <br>
 
 
-FIND A WAY TO SHOW THIS HERE IF POSSIBLE:
-![video](./video.mp4)
+VIDEO:
+[![Pingüino](http://img.youtube.com/vi/Tcx6YyXvvRI/0.jpg)](http://www.youtube.com/watch?v=Tcx6YyXvvRI “Pingüino”)
 
 
+:grinning:
 
