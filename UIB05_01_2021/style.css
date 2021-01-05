@@ -1,0 +1,25 @@
+* {
+    background-color: red;
+}
+
+
+.yellow {
+    color: rgb(255, 255, 0);
+
+}
+
+#country {
+    background-color: rgb(255, 0, 0);
+}
+
+.data {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tab {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 400px;
+    text-align: center;
+
+}
