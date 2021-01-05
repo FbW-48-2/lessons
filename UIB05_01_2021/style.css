@@ -9,7 +9,8 @@
 }
 
 #country {
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
+    background-color: #000000;
 }
 
 .data {
@@ -22,4 +23,9 @@
     height: 400px;
     text-align: center;
 
+}
+
+
+section {
+    color: rgb(255, 255, 255);
 }
