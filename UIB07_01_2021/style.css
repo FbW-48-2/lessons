@@ -1,0 +1,23 @@
+* {
+    background-color: pink;
+}
+
+/* RGB - rgba*/
+
+h1 {
+ color: rgb(15, 18, 179);   
+}
+
+.red {
+    color: rgb(255, 0, 0);
+}
+
+.blue {
+    color: rgb(0, 0, 255);
+}
+
+h2 {
+    color: #1eff00;
+}
+
+
