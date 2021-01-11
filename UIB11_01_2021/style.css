@@ -77,3 +77,25 @@ a:visited {
 .vh25 {
     height: 25vh;
 }
+
+.one-rem {
+    font-size: 1rem;
+}
+
+.one-em {
+    font-size: 1em;
+    color: #70b9f2;
+}
+
+.two-rem {
+    font-size: 2rem;
+}
+
+.two-em {
+    font-size: 2em;
+    color: #caca43;
+}
+
+.parent-rem-em {
+    font-size: 30px;
+}

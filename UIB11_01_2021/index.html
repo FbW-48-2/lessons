@@ -71,5 +71,26 @@
 
     </section>
 
+
+    <!-- rem and em units! rem relative to the root, em it's relative to its parent. -->
+
+    <div class="one-rem">1 rem</div>
+    <div class="one-em">1 em</div>
+    <div class="two-rem">2 rem</div>
+    <div class="two-em">2 em</div>
+
+    <hr>
+
+    <section class="parent-rem-em">
+        <!-- 1rem is still the same size as the one on top without the parent, it doesn't change because it is still taking the size from the root element  -->
+        <div class="one-rem">1 rem</div>
+        <!-- 1 em is 100% of the parent's font size -->
+        <div class="one-em">1 em</div>
+        <div class="two-rem">2 rem</div>
+        <!-- 2 em is exactly double the size of the parent! in this case the parent is 30px so this is 60px! -->
+        <div class="two-em">2 em</div>
+    </section>
+
+
 </body>
 </html>
