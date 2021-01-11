@@ -1,0 +1,79 @@
+* {
+    background-color: #999972;
+}
+
+/* descendant selectors: */
+
+.section1 p {
+    color: #ffffff;
+    background-color: #0000ff;
+}
+
+h2 {
+    color: #ff4500;
+}
+
+/* Pseudo classes: is a keyword added to a selector that specifies a special state of the selected element. */
+
+h1:hover {
+    background-color: #f7e708;
+}
+
+
+h2:hover {
+    background-color: #e23636;
+    color: #ffffff;
+}
+
+/* multiple selectors: */
+h1:hover, h2:hover {
+    color: #62b90b;
+}
+/* 
+:active pseudo class represents an element (such as a button) that is being activated by the user. When using a mouse, "activation" typically starts when the user presses down the primary mouse! */
+
+a:active {
+    background-color: #000000;
+} 
+
+/* :link once I press the mouse you will see color changes */
+a:link {
+    color: #e9d8d8;
+}
+
+
+a:visited {
+    color: #2bf16d;
+}
+
+/* CSS UNITS */
+
+.box {
+    background-color: #ff0000;
+    border: 3px solid #000000;
+}
+
+.box2 {
+    background-color: #adff2f;
+}
+
+.parent {
+    width: 150px;
+    border: 2px solid #bd2525;
+}
+
+.per50 {
+    width: 50%;
+}
+
+.pix80 {
+    width: 80px;
+}
+
+.vw50 {
+    width: 50vw;
+}
+
+.vh25 {
+    height: 25vh;
+}
