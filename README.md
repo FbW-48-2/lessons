@@ -2,6 +2,8 @@
 
 You will find the folders for:
 
-1.[BDL](BDL)
+1. [click here to go to BDL](BDL)
 
-2.[UI-Basics](UI-Basics) and [UIB-solutions](UIB-solutions)
+2. [click here to go to UI-Basics](UI-Basics) 
+
+3. [click here to go to UIB-solutions](UIB-solutions)
