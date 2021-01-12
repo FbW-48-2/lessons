@@ -1,0 +1,19 @@
+/* * {
+    background-color: blueviolet;
+} */
+
+img {
+    width: 300px;
+    height: 300px;
+    border: 3px solid rgb(243, 220, 14);
+    opacity: 0.7;
+    border-radius: 50%;
+    float: left;
+    margin: 20px;
+
+}   
+
+img:hover {
+    opacity: 1;
+}
+
