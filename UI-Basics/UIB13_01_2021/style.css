@@ -1,0 +1,55 @@
+section {
+  width: 300px;
+  height: 400px;
+}
+
+.test_1 {
+  border: 1px solid rebeccapurple;
+}
+
+.section_1 {
+  color: red;
+
+  border: 1px solid red;
+}
+
+.section_2 {
+  border: 3px solid green;
+}
+
+.section_3 {
+  border: 5px solid yellow;
+}
+
+.section_3 {
+  color: red;
+  font-size: 20px;
+}
+
+#contact_form {
+  border: 5px solid blue;
+}
+
+.contact_form {
+  border: 5px solid grey;
+}
+
+#sub {
+  border: 1px solid pink;
+}
+
+.w_100 {
+  width: 100vw;
+}
+
+.section_3 p {
+  color: initial;
+}
+
+.section_3 p span {
+  color: blue;
+}
+
+.section_3 .div_span {
+  color: purple;
+}
