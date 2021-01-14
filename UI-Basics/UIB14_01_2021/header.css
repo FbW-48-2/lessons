@@ -1,0 +1,37 @@
+/* Header styles*/
+
+.header {
+  background-image: url("assets/header-bg.svg");
+  width: 100vw;
+  height: 100vh;
+  /* border: 1px solid red;*/
+}
+
+/* Navbar styles*/
+
+.navbar {
+  width: 100%;
+  /* height: 118px;*/
+  /* border: 1px solid red;*/
+  background-color: rgba(255, 245, 238, 0.664);
+}
+
+.logo {
+  /* border: 1px solid green;*/
+  padding: 15px;
+}
+
+.navbar-desktop {
+  /* border: 1px solid blue;*/
+  margin-left: 30%;
+}
+
+.navbar-link {
+  /* border: 1px solid purple;*/
+  padding: 15px;
+}
+
+.navbar-link:hover {
+  color: gray;
+  cursor: pointer;
+}
