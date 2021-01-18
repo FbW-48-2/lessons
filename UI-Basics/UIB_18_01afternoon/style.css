@@ -1,0 +1,41 @@
+* {
+    /* background-color: lightblue; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* option 1:
+    I'm only using background instead of background-image so I can add more properties to it; 
+    center is for position, no re-repeat is to have our image only once*/
+    /* background: center / cover no-repeat url(images/cafe.jpg);
+    height: 100vh; */
+}
+
+h1 {
+    color: #ffffff;
+    background-color: yellow;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 200;
+
+}
+
+/* 2nd option: */
+
+.img-container {
+    height: 25rem;
+    width: 35rem;
+    margin: 10% auto;
+    background-image: url("images/coding.jpg");
+    /* cover resizes the image to cover the container, it can stretch the image if needed */
+    background-size: cover;
+    /* auto shows the original size, it might not look good */
+    /* background-size: auto; */
+    background-repeat: no-repeat;
+
+    /* contain resizes the background image to make it fully visible */
+    /* background: center / contain no-repeat url("images/coding.jpg"); */
+
+}
