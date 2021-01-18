@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* background-color: pink; */
+     /* border-box makes the height and width account so the whole box is only 100px as shown and not 100px plus border plus padding plus ... */
+
+     box-sizing: border-box;
+}
+
+.box-one {
+    background-color: #eb5757;
+    /* padding goes around the content */
+    padding: 20px;
+    height: 100px;
+    border: 20px solid #9b51e0;
+    /* space outside of the border, space 2 elements apart from each other */
+    margin: 50px;
+   
+}
+
+.box-two {
+    background-color: #2d9cdb;
+    border: 0 solid #27ae60;
+    /* margin collapses between two elements that are next to each other, the largest margin is the one used. */
+    margin: 15px;
+}
+
+.box-three {
+    background-color: #ffc0cb;
+    margin: 25px;
+}
+
+h2 {
+    margin: 20px;
+}
+
+.block {
+    /* display: block; not needed*/
+    border: 2px solid royalblue;
+}
+
+.inline {
+    display: inline;
+    border: 2px solid yellowgreen;
+    /* width: 20%; */
+    /* margin: 20px;
+    padding: 30px; */
+}
+
+.inline-block {
+    display: inline-block;
+    border: 2px solid #ff0000;
+    margin: 20px;
+    padding: 30px;
+}
