@@ -1,0 +1,72 @@
+* {
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+}
+/* 
+position static: default position of all html elements, it follows the order from your html */
+
+.parent {
+    padding: 5px;
+    background-color: #00AAFF;
+    /* if I add position relative to the parent, the child with position absolute will stay absolute to the parent otherwise it goes to the body of the html */
+    position: relative;
+   
+    /* height: 200vh;
+    width: 200vw; */
+}
+
+.child {
+    padding: 15px;
+}
+
+.child-one {
+    background-color: rgb(116, 255, 116);
+    position: relative;
+    left: 15px;
+}
+
+.child-two {
+    background-color: rgb(255, 116, 232);
+    position: absolute;
+    top: 0;
+}
+
+
+.child-three {
+    background-color: rgb(248, 117, 117);
+    position: fixed;
+    /* position: sticky; */
+    top: 0;
+    right: 0;
+
+}
+
+/* z-index: */
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+.box-red {
+    background-color: #ff0000;
+    top: 50px;
+    /* default value for z-index is 0 */
+    z-index: 1;
+}
+
+.box-blue {
+    background-color: #0000ff;
+    /* you can decrease the z-index value of the element to send it further to the background: */
+    z-index: -1;
+    top: 60px;
+}
+
+.box-green {
+    background-color: #008000;
+
+    z-index: 2;
+}
+
