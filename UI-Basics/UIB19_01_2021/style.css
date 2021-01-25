@@ -2,18 +2,23 @@
     /* padding: 0;
     margin: 0; */
     box-sizing: border-box;
+    position: relative;
 }
 /* 
 position static: default position of all html elements, it follows the order from your html */
+
+.main {
+    position: relative; ;
+}
 
 .parent {
     padding: 5px;
     background-color: #00AAFF;
     /* if I add position relative to the parent, the child with position absolute will stay absolute to the parent otherwise it goes to the body of the html */
-    position: relative;
+    position: fixed;
    
-    /* height: 200vh;
-    width: 200vw; */
+    height: 200vh;
+    width: 200vw;
 }
 
 .child {
