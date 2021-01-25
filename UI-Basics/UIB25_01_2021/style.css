@@ -1,7 +1,7 @@
 /* * {
     background-color: navy;
 } */
-
+/* 
 .parent-rem-em {
     font-size: 30px;
 }
@@ -22,19 +22,65 @@
 
 .innerchild {
     font-size: 2em;
-}
+} */
 
 
 /* direction and alignment */
 
-.rtl {
+/* .rtl {
     direction: rtl;
+} */
+
+/* .random {
+    text-align: justify; 
+    width: 75%; 
+    text-align: center;
+    width: 100%; 
+    text-align: left;
+} */
+
+
+:root {
+    font-size: 62.5%;
 }
 
-.random {
-    text-align: justify;
-    /* width: 75%; */
-    /* text-align: center; */
-    width: 100%;
-    /* text-align: left; */
+body {
+    font-size: 1.6rem;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h3 {
+    background-color: rgb(128, 255, 0);
+    font-size: 3rem;
+}
+
+.transform {
+    text-transform: uppercase;
+}
+
+li:first-child {
+    text-decoration: underline;
+}
+
+li:last-child {
+    text-decoration: line-through;
+}
+
+.shadow {
+    font-size: 2em;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+.pseudo::before {
+    content: "must read" ;
+    display: inline-block;
+    color: blueviolet;
+}
+
+/* string value for content: */
+.pseudo::after {
+    content: "*";
+    /* content: ""; empty string*/
+    color: red;
 }
