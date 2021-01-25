@@ -1,0 +1,40 @@
+/* * {
+    background-color: navy;
+} */
+
+.parent-rem-em {
+    font-size: 30px;
+}
+
+.one-rem {
+    font-size: 1rem;
+}
+
+.one-em {
+    font-size: 1em;
+    color: #70b9f2;
+}
+
+.two-em {
+    font-size: 2em;
+    color: #caca43;
+}
+
+.innerchild {
+    font-size: 2em;
+}
+
+
+/* direction and alignment */
+
+.rtl {
+    direction: rtl;
+}
+
+.random {
+    text-align: justify;
+    /* width: 75%; */
+    /* text-align: center; */
+    width: 100%;
+    /* text-align: left; */
+}
