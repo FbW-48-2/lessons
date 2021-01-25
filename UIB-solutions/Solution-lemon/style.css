@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ingredient {
+    border: 2px solid #d5d5d5;
+    background: #e4f7e4
+}
+
+.ingredient ul:nth-of-type(1) {
+    background: lightblue;
+    list-style-type: square;
+}
+
+.ingredient ul:nth-of-type(2) {
+    background: lightgreen;
+    list-style-type: circle;
+}
+
+.ingredient ul:nth-of-type(3) {
+    background: orange;
+    list-style-type: disc;
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+div:nth-of-type(3) a {
+    color: red;
+    text-decoration: none;
+}
+div:nth-of-type(3) a:hover {
+    color: green;
+}
+
+div:nth-of-type(4) a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+div:nth-of-type(4) a:hover {
+    color: orange;
+}

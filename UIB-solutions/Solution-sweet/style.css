@@ -1,0 +1,56 @@
+h1 {
+  background-color: #f58ea0;
+  color: #dad8d8;
+}
+
+h2 {
+  color: #f112f1;
+  background-color: #dad8d8;
+}
+
+#main-topic {
+  background-color: hotpink;
+}
+
+.subtopic {
+  background-color: #ebf64d;
+}
+
+.subtopic:hover {
+  color: rgb(30, 215, 240);
+}
+
+.partners:active {
+  background-color: hotpink;
+  color: #efefef;
+}
+
+h4 + ul {
+  list-style: none;
+}
+
+h4 + ul:hover {
+  background-color: #ebf64d;
+}
+
+#contact a:visited {
+  color: rgb(30, 215, 240);
+}
+
+/* CONTACT PAGE */
+
+ul {
+  background-color: rgb(30, 215, 240);
+}
+
+ul:hover {
+  background-color: #f58ea0;
+}
+
+h3 + ul li {
+  list-style: circle;
+}
+
+#main a:visited {
+  color: #ec10bd;
+}

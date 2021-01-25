@@ -1,0 +1,55 @@
+/* Task 1 */
+
+/* h1 {
+    color: red;
+}
+
+h2 {
+    color: orange;
+}
+
+h3 {
+    color: yellow;
+}
+
+h4 {
+    color: green;
+}
+
+h5 {
+    color: blue;
+}
+
+h6 {
+    color: indigo;
+} */
+
+/* Task 2 */
+h1 {
+    color: rgba(255, 0, 0, 0.657);
+}
+
+h2 {
+    color: rgba(255, 166, 0, 0.781);
+}
+
+h3 {
+    color: rgba(255, 255, 0, 0.705);
+}
+
+h4 {
+    color: rgba(0, 128, 0, 0.65);
+}
+
+h5 {
+    color: rgba(0, 0, 255, 0.424);
+}
+
+h6 {
+    color: rgba(76, 0, 130, 0.5);
+}
+
+/* Task 3 */
+p {
+    color: #6826e2;
+}
