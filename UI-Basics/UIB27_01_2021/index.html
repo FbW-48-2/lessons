@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>UIB - Data - Forms - Live Coding 01</title>
+  </head>
+  <body>
+    <header class="header">Contact Form</header>
+    <!-- action - where the data is sent, e.g. a URL -->
+    <main class="main">
+      <form action="">
+        <div class="details">
+          <fieldset>
+            <legend>Your Details</legend>
+            <div class="userName">
+              <label for="userName">User Name:</label>
+              <input
+                id="userName"
+                type="text"
+                name="userName"
+                placeholder="Please insert your user name"
+                value="Alex"
+              />
+            </div>
+
+            <div class="userEmail">
+              <label for="userEmail">User email:</label>
+              <input
+                type="email"
+                id="userEmail"
+                name="userEmail"
+                placeholder="Please insert your email"
+              />
+            </div>
+            <button type="submit">Submit</button>
+          </fieldset>
+        </div>
+      </form>
+    </main>
+    <!-- fieldset is used to group several controls as well as labels within a web form -->
+
+    <!-- legend represents a caption for the content of its parent fieldset -->
+
+    <!-- the label element is visually AND programmatically associated with its corresponding text input using the 'for' attribute -->
+  </body>
+</html>
