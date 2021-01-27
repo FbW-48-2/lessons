@@ -10,7 +10,7 @@
     <header class="header">Contact Form</header>
     <!-- action - where the data is sent, e.g. a URL -->
     <main class="main">
-      <form action="">
+      <form action="" method="POST">
         <div class="details">
           <!-- fieldset is used to group several controls as well as labels within a web form -->
           <fieldset>
@@ -44,20 +44,25 @@
             <p>Select your favourite language</p>
             <!-- Radio Buttons! = one or the other (or the other..) -->
             <div class="javascript">
-              <input type="radio" value="javascript" checked />
+              <input
+                type="radio"
+                name="javascript"
+                value="javascript"
+                checked
+              />
               <label for="">Javascript</label>
             </div>
             <div class="php">
-              <input type="radio" value="php" />
+              <input type="radio" name="php" value="php" />
               <label for="">PHP</label>
             </div>
             <p>What careers are you considering?</p>
             <div class="webDev">
-              <input type="checkbox" />
+              <input name="webDev" type="checkbox" />
               <label for="">Web Dev</label>
             </div>
             <div class="sysAdmin">
-              <input type="checkbox" checked />
+              <input name="sysAdmin" type="checkbox" checked />
               <label for="">Sys Admin</label>
             </div>
 
@@ -66,15 +71,18 @@
                 <label for="">Tell us about your experience:</label>
               </div>
 
-              <textarea></textarea>
+              <textarea name="experience"></textarea>
             </div>
 
             <div class="select">
               <label for="">How did you find us?</label>
 
-              <select>
+              <select name="select">
                 <!-- Internet,Social Media,  Newspaper-->
                 <!-- the option element represents menu items in popups and other lists of items in an HTML document -->
+                <option disabled selected>Please select option:</option>
+                <option value="Internet">Internet</option>
+                <option value="socialMedia">Social Media</option>
               </select>
             </div>
           </fieldset>
