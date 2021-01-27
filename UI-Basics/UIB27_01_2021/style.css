@@ -18,9 +18,11 @@ body {
   text-align: center;
 }
 
-.details {
-  width: 60%;
-  height: 200px;
-  border: 1px solid;
-  margin: auto;
+.javascript,
+.php,
+.webDev,
+.sysAdmin,
+.experience,
+.select {
+  padding: 10px;
 }
