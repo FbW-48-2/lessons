@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Forms</title>
+</head>
+
+<body>
+	<header id="top">
+		<span class="header">Forms</span>
+	</header>
+	<main>
+		<form action="#" method="get">
+			<div class="form-column">
+				<fieldset>
+					<legend>Personal Data</legend>
+					<label class="label" for="firstname">First name:</label>
+					<input type="text" name="firstname" id="firstname">
+					<label class="label" for="lastname">Last name:</label>
+					<input type="text" name="lastname" id="lastname">
+					<label class="label" for="street">Street:</label>
+					<input type="text" name="street" id="street">
+					<label class="label" for="zipcode">Zipcode:</label>
+					<input type="text" name="zipcode" id="zipcode">
+					<label class="label" for="city">City:</label>
+					<input type="text" name="city" id="city">
+					<label class="label" for="phone">Phone:</label>
+					<input type="tel" name="phone" id="phone">
+					<label class="label" for="email">Email:</label>
+					<input type="email" name="email" id="email">
+					<label class="label" for="comments">Comments:</label>
+					<textarea rows="4" name="comments" id="comments"
+						placeholder="Tell us more about important colors, etc."></textarea>
+				</fieldset>
+			</div><!-- no spaces
+	 --><div class="form-column">
+				<fieldset>
+					<legend>Products</legend>
+					<div class="web-design">
+						<span class="label">
+							Web Design:
+						</span>
+						<div class="radiobuttons">
+							<div class="radio">
+								<input type="radio" name="webdesign" value="Individual" id="webdesign-ind" checked="true">
+								<label for="webdesign-ind">Individual</label>
+							</div>
+							<div class="radio">
+								<input type="radio" name="webdesign" value="Template" id="webdesign-temp">
+								<label for="webdesign-temp">Template</label>
+							</div>
+						</div>
+					</div>
+					<div class="web-dev">
+						<span class="label">
+							Web Development:
+						</span>
+						<div class="checkbox">
+							<input type="checkbox" name="web-dev[]" value="html" id="web-dev-html">
+							<label for="web-dev-html">HTML & CSS</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="web-dev[]" value="css" id="web-dev-css">
+							<label for="web-dev-css">JavaScript</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" name="web-dev[]" value="js" id="web-dev-js">
+							<label for="web-dev-js">MongoDB</label>
+						</div>
+					</div>
+					<div class="project">
+						<label class="label" for="projectstart">Project Start:</label>
+						<input class="data" type="date" name="projectstart" id="projectstart">
+						<label class="label" for="projectend">Project End:</label>
+						<input class="data" type="date" name="projectend" id="projectend">
+						<label class="label" for="category">Category:</label>
+						<select class="data" name="category" id="category">
+							<option value="personal">Personal</option>
+							<option value="business">Business</option>
+							<option value="government">Government</option>
+						</select>
+					</div>
+				</fieldset>
+				<div class="submit">
+					<button class="btn btn-submit">Order our services</button>
+				</div>
+			</div>
+		</form>
+	</main>
+</body>
+
+</html>

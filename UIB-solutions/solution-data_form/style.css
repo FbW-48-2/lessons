@@ -1,0 +1,99 @@
+/*General Styling*/
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family:
+  /* Safari for OS X and iOS (San Francisco) */
+  -apple-system,
+  /* Chrome >= 56 for OS X (San Francisco), Windows, Linux and Android */
+  system-ui,
+  /* Chrome < 56 for OS X (San Francisco) */
+  BlinkMacSystemFont,
+  /* Windows */
+  "Segoe UI",
+  /* Android */
+  "Roboto",
+  /* Basic web fallback */
+  "Helvetica Neue", Arial, sans-serif;
+  margin: auto;
+}
+
+/*Header*/
+#top{
+  width: 100%;
+  background-color: #353A40;
+  padding: 0.9375rem;
+  margin-bottom: 0.3125rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+/*Content*/
+.form-column {
+  display: inline-grid;
+  width: 50%;
+  padding: 1%;
+   vertical-align: top;
+}
+
+
+
+legend {
+  color: #3766b8;
+  padding: 0.625rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+}
+
+.label {
+  display: block;
+  font-weight: 700;
+  margin: 0 0 0.625rem 0;
+}
+
+.data {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 0.625rem 0;
+  line-height: 2rem;
+}
+
+#firstname,
+#lastname,
+#street,
+#zipcode,
+#city,
+#phone,
+#email,
+#comments {
+  margin: 0 0 1rem 0;
+  width: 100%;
+  line-height: 1.5rem;
+}
+
+.radio {
+  display: inline-block;
+}
+
+.btn {
+  border: 0;
+  padding: 0.75rem 1.25rem;
+  margin: 1.25rem 0 0 0;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 0.5rem;
+  background-color: #09aa16;
+}
+
+.web-design,
+.web-dev, 
+.checkbox
+{
+  margin-bottom: 1rem;
+}
