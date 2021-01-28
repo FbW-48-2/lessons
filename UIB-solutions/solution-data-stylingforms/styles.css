@@ -1,0 +1,85 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black url('images/background.jpg') top center no-repeat;
+
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    padding: 0 0 10px;
+    margin: 0 0 10px; 
+}
+
+#header {
+    margin-top: 20px;
+}
+
+#container {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.content-block {
+    background: url('images/transparent_white.png') top left repeat;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#content {
+    border: solid 10px black;
+}
+
+#reserver {
+    border: solid 10px white;
+}
+
+#footer {
+    background: black;
+}
+
+form {
+    text-align: left;
+    width: 300px;
+    margin: 20px auto 0;
+}
+
+form label {
+    display: block; 
+    width: 290px; 
+    /* 290px width + 5px padding left + 5px padding right = 300px */
+    padding: 5px; 
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: bold;
+    background: #333;
+    color: white;
+}
+
+form input  {
+    display: block;
+    width: 290px;
+    padding: 5px;
+    margin: 0 0 10px;
+    border: none;
+    font-size: 22px;
+    font-family: Georgia, Times, serif;
+    font-style: italic;
+}
+
+form input[type="submit"] {
+    background: #333;
+    color: white;
+    cursor: pointer;
+    width: 300px;
+}
