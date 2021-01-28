@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+/* *************************** */
+
+/* PRIMARY COLORS */
+
+.color {
+  padding: 50px;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.primary {
+  background-color: rgb(44, 155, 211);
+}
+
+.secondary {
+  background-color: rgb(211, 100, 44);
+}
+
+/* GRAYS */
+
+.gray {
+  text-align: center;
+  padding: 30px;
+}
+
+.darkest {
+  background-color: rgb(38, 39, 39);
+}
+
+.dark {
+  background-color: rgb(59, 59, 59);
+}
+
+.medium {
+  background-color: rgb(93, 93, 93);
+}
+
+.light {
+  background-color: rgb(124, 123, 123);
+}
+
+.lightest {
+  background-color: rgb(230, 230, 233);
+}
+
+h1 {
+  color: rgb(44, 155, 211);
+}
+
+h2 {
+  color: rgba(42, 155, 211, 0.76);
+}
+
+h3 {
+  color: rgba(42, 155, 211, 0.623);
+}
+
+a {
+  color: rgb(211, 100, 44);
+}
