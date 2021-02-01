@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Styling forms</title>
+</head>
+<body>
+
+    <main>
+
+        <form action="#" method="GET">
+            <ul>
+                <li>
+                    <!-- we set for the same as the id of the attribute -->
+                    <label for="name">name</label>
+                    <!-- you always want to specify a type for the input by default is text. If we use type password it will hide our characters. Required is for telling the user that he must add the information -->
+                    <input type="text" name="user_name" id="name" maxlength="20" required>
+                </li>
+
+                <li>
+                    <!-- the disabled attribute makes the user unable to enter information in that particular input.  -->
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="user_name" id="email" placeholder="please enter your email" disabled>
+                </li>
+
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea name="msg" id="msg"></textarea>
+                </li>
+
+                <li class="button">
+                    <!-- <button type="reset">reset</button> -->
+                    <button type="submit">Send your message!</button>
+                </li>
+
+            </ul>
+
+        </form>
+
+        <form action="#" method="get">
+            <label for="city_select">Choose your city!</label>
+            <select name="cities" id="city_select">
+                <option value="" >Please select a city</option>
+                    <optgroup label="Europe">
+                        <option value="Prague">Prague</option>
+                        <option value="Madrid">Madrid</option>
+                        <option value="Dublin">Dublin</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="Seoul">Seoul</option>
+                        <option value="Beijing">Beijing</option>
+                        <option value="Kyoto">Kyoto</option>
+
+                    </optgroup>
+            </select>
+        </form>
+
+
+
+
+
+    </main>
+    
+</body>
+</html>
