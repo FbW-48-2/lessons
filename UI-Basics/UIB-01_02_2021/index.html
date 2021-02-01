@@ -31,6 +31,13 @@
                     <textarea name="msg" id="msg"></textarea>
                 </li>
 
+                <div class="news">Newsletter
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+
                 <li class="button">
                     <!-- <button type="reset">reset</button> -->
                     <button type="submit">Send your message!</button>
@@ -58,6 +65,26 @@
             </select>
         </form>
 
+        <!-- an input with  type file lets the user choose one or more files from their device storage (your computer) and once chosen the files can be uploaded to a server -->
+        <form action="#">
+            <p>Upload your song</p>
+            <input type="file" name="user_song" >
+            <button type="submit">Upload</button>
+        </form>
+
+
+        <!-- datalist: is for predefined options -->
+        <form action="#">
+            <label for="pet-choice">Pick your favorite pet</label>
+            <input list="pet-choices" id='pet-choice' name="pet-choice">
+            <datalist id="pet-choices">
+                <option value="Cat">Cat</option>
+                <option value="Dog">Dog</option>
+                <option value="Fish">Fish</option>
+
+            </datalist>
+
+        </form>
 
 
 
