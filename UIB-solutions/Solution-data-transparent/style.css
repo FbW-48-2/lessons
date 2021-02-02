@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-height: 100vh;
+  font-family: sans-serif;
+  color: #efefef;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(https://unsplash.it/500/500) no-repeat center / cover;
+}
+
+/* Form */
+
+main {
+  width: 20vw;
+  margin: 10% auto;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 8px;
+  margin-bottom: 40px;
+  border-bottom: 5px solid #4caf50;
+}
+
+input {
+  display: inline-block;
+  padding: 5px 0px;
+  color: white;
+  background: transparent;
+  outline: none;
+}
+
+.input-box {
+  border-bottom: 1px solid #4caf50;
+  margin-bottom: 20px;
+}
+
+i.fas {
+  width: 20px;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: 0;
+}
+
+input[type="button"] {
+  width: 100%;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: white;
+}
+
+input:focus::placeholder {
+  font-weight: bold;
+}
