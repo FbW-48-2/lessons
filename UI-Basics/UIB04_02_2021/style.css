@@ -88,3 +88,14 @@ header h1 {
   /* align-items default value is: flex-start  */
   align-items: flex-end;
 }
+
+.d-flex-13 {
+  /* align-items default value is: flex-start  */
+  align-items: center;
+  justify-content: center;
+}
+.d-flex-14 {
+  /* align-items default value is: flex-start  */
+  align-items: flex-end;
+  justify-content: flex-end;
+}
