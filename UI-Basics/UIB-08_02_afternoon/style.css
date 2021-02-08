@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+header, footer, article, aside {
+    padding: 1rem;
+}
+
+article {
+    flex: 1;
+}
+
+aside {
+    background-color: rgb(211, 211, 187);
+}
+
+.left {
+    order: -1;
+}
+
+header, footer {
+    background-color: tomato;
+    height: 20vh;
+}
+
+
+@media screen and (min-width: 576px) {
+    main {
+        flex-direction: row;
+    }
+
+    header, footer {
+        background-color: rgb(71, 151, 255);
+    }
+
+    aside {
+        flex: 0 20vw;
+    }
+}
