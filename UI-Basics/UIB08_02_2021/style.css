@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    /* height: 20rem; */
+}
+
+.item {
+    height: 10rem;
+    width: 10rem;
+    background-color: rgb(147, 147, 147); 
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.one {
+    flex-shrink: 3;
+    order: 2;
+}
+.two {
+    order: 1;
+}
+.three {
+    /* If I want this item to grow bigger to fill some of the extra space left we use flex-grow and the item will take the extra space no matter how big it is  */
+    flex-grow: 2;
+    /* order: 2; */   
+}
+
+.four {
+    order: -1;
+    /* flex-grow: 2;
+    flex-shrink: 2;
+    flex-basis: 30px; */
+    /* flex: 2 2 30px; */
+    flex: 30px;   
+}
+
+/* align self: this property specifies the alignment for the selected item inside the flex container */
+
+.flex-container-2 {
+    display: flex;
+    list-style: none;
+    height: 20rem;
+}
+
+.flex-item {
+    background-color: #7fff00;
+    padding: 5px;
+    width: 10rem;
+    margin: 5px;
+    line-height: 10rem;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+
+.flex-start {
+    align-self: flex-start;
+}
+
+.flex-end {
+    align-self: flex-end;
+}
+
+.center {
+    align-self: center;
+}
+
+.baseline {
+    align-self: baseline;
+}
+
+.stretch {
+    align-self: stretch;
+}
+
+
+@media (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .item {
+        background-color: honeydew;
+    }
+
+    .flex-container-2 {
+        flex-direction: column;
+    }
+
+    .flex-item {
+        background-color: hotpink;
+    }
+}

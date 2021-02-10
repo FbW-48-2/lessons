@@ -1,0 +1,44 @@
+body {
+  height: 100vh;
+  border: 10px solid black;
+}
+
+main {
+  margin: 15px;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 0px) {
+  body {
+    border: 10px solid red;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  body {
+    border: 10px solid blue;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    border: 10px solid green;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    border: 10px solid yellow;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    border: 10px solid hotpink;
+  }
+}
