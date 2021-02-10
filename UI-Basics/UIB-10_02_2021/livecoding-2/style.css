@@ -1,0 +1,9 @@
+.d-grid > div,
+.d-grid-2 > div {
+  background-color: #eee;
+}
+
+.d-grid > div:nth-child(even),
+.d-grid-2 > div:nth-child(odd) {
+  background-color: #ddd;
+}

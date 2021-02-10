@@ -1,0 +1,33 @@
+.d-grid > div,
+.d-grid-2 > div {
+  background-color: #eee;
+}
+
+.d-grid > div:nth-child(even),
+.d-grid-2 > div:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.d-grid {
+  margin-bottom: 20px;
+  display: grid;
+  /* grid-template-columns: 20% 50% 30%; */
+  /* grid-template-columns: 50% 50%; */
+  grid-template-columns: 10% 20% 50% 20%;
+  grid-gap: 2em;
+  /*
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  */
+}
+
+.d-grid-2 {
+  display: grid;
+  grid-gap: 1em;
+  /* grid-template-columns: 25% 25% 25% 25%; */
+  /* the repeat function creates a repeated fragment of the track list, allowing a large number of columns or rows that exhibit a recurring pattern to be written in a more compact form */
+
+  /* grid-template-columns: repeat(5, 20%); */
+
+  grid-template-columns: repeat(3, auto);
+}
