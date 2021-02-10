@@ -7,3 +7,24 @@
 .d-grid-2 > div:nth-child(odd) {
   background-color: #ddd;
 }
+
+.d-grid {
+  margin-bottom: 20px;
+  display: grid;
+  /* the fr unit represents a fraction of the available space in the grid container. Grid definition would create three equal width tracks that grow and shrink according to the available space */
+
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
+
+  /* gap: <grid-row-gap> <grid-column-gap>*/
+  gap: 1em 2em;
+}
+
+.d-grid-2 {
+  display: grid;
+
+  /* gap: <grid-row-gap> <grid-column-gap>*/
+  grid-gap: 1em;
+
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+}
