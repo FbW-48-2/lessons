@@ -1,7 +1,17 @@
-.header {
+.header,
+.footer {
   width: 100vw;
   background: #ddd;
   height: 80px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
 }
 
 /* .navbar > div {
@@ -38,7 +48,52 @@
   display: none;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+}
+
+section {
+  border: 1px solid blue;
+  min-height: 300px;
+}
+
+section:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.projects > div {
+  border: 1px solid red;
+  /* overflow: auto; */
+}
+
+.projects > div img {
+  width: 100%;
+}
+
+.project-5 {
+  grid-column: 2/4;
+}
+
+.project-9 {
+  grid-column: 1/4;
+}
+
 @media all and (max-width: 835px) {
+  .container {
+    width: 100%;
+  }
   .navbar-items {
     display: none;
   }
