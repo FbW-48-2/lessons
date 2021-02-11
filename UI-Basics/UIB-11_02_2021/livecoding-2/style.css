@@ -1,0 +1,51 @@
+.header {
+  width: 100vw;
+  background: #ddd;
+  height: 80px;
+}
+
+/* .navbar > div {
+  border: 1px solid red;
+} */
+
+.navbar {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.navbar-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-items > div {
+  margin-left: 15px;
+}
+
+.navbar-items > div:hover {
+  color: gray;
+}
+
+.bars {
+  display: none;
+}
+
+@media all and (max-width: 835px) {
+  .navbar-items {
+    display: none;
+  }
+  .bars {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+  }
+}
