@@ -35,10 +35,11 @@ body {
 }
 
 .card-header {
-    padding: 1.1rem;
+    padding: 1rem;
     background-color: rgb(117, 74, 191);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .card-header h2 {
@@ -54,6 +55,7 @@ body {
 .card-text {
     padding: 1.3rem;
     background-color: rgb(227, 229, 233);
+    
 }
 
 .card-footer {
@@ -61,4 +63,5 @@ body {
     text-align: center;
     background-color: rgb(122, 219, 226);
     color: antiquewhite;
+    align-items: center;
 }
