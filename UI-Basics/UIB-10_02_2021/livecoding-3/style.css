@@ -1,0 +1,35 @@
+.d-grid > div {
+  background-color: #ddd;
+  border: 1px solid red;
+}
+
+/* grid-auto-flow: row (default), all the columns fit in row */
+.d-grid {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+
+  /* grid-template-columns: repeat(3, 500px);
+     grid-auto-flow: row; */
+  /* justify-items: stretch; */
+  /* justify-items: center; */
+  /* justify-items: end; */
+}
+
+.item-3 > div,
+.item-7 > div {
+  border: 1px solid blue;
+}
+
+.item-3 {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-gap: 1em;
+}
+
+.item-7 {
+  padding: 5px;
+  display: flex;
+}
