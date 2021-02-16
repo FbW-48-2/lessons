@@ -170,3 +170,17 @@ footer p {
     font-size: 1.7rem;
 }
 
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "hero"
+        "aside"
+        "main"
+        "extra"
+        "image"
+        "post"
+        "footer";
+    }
+}
