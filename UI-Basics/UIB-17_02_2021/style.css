@@ -69,21 +69,39 @@ body {
   grid-gap: 1em;
 }
 .shapes-component > div {
-  background-color: #ddd;
+  /* background-color: #ddd; */
 
   /* To center the content*/
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
 }
 
 /* Shapes with css*/
+
+/*
+transform property
+
+transform: rotate() CSS function defines a transformation that rotates an element around a fixed point on the 2D plane, without deforming it. 
+
+transform: translate() CSS function repositions an element in the horizontal and/or vertical directions.
+
+transform: scale() CSS function defines a transformation that resizes an element on the 2D plane. Because the amount of scaling is defined by a vector, it can resize the horizontal and vertical dimensions at different scales.
+*/
 
 .shape-1 {
   width: 150px;
   height: 100px;
   transform: skew(20deg);
+  /* background: red !important; */
   background: red;
+}
+
+.shape-1:hover {
+  /* background-color: blue !important; */
+  background-color: blue;
+
+  transform: rotate(60deg) skew(20deg);
 }
 
 .shape-2 {
@@ -107,7 +125,12 @@ body {
   left: -50px;
 }
 
+.shape-2:hover {
+  transform: scale(1.5);
+}
+
 .shape-3 {
+  background-color: blueviolet;
   clip-path: polygon(
     20% 0%,
     0% 20%,
@@ -125,6 +148,7 @@ body {
 }
 
 .shape-4 {
+  background-color: chartreuse;
   clip-path: polygon(
     0% 15%,
     15% 15%,
@@ -139,4 +163,12 @@ body {
     15% 85%,
     0% 85%
   );
+}
+
+.shape-5 {
+  background-color: yellow;
+}
+
+.shape-6 {
+  background-color: violet;
 }
