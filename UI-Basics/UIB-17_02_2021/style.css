@@ -145,6 +145,10 @@ transform: scale() CSS function defines a transformation that resizes an element
     80% 0%,
     50% 30%
   );
+  /* transition: all 2s ease; */
+}
+.shape-3:hover {
+  transform: scale(0.8);
 }
 
 .shape-4 {
@@ -163,12 +167,38 @@ transform: scale() CSS function defines a transformation that resizes an element
     15% 85%,
     0% 85%
   );
+  /* transition: all 2s ease; */
+}
+
+.shape-4:hover {
+  transform: rotate(-180deg);
+  /* transform: rotate(-360deg); */
 }
 
 .shape-5 {
   background-color: yellow;
+  /* transform: translate(X,Y); */
+  /* transform: translateX(); */
+  /* transform: translateY(); */
+
+  transform: translate(20px, 60px);
+  /* X-axis to the right */
+
+  /* - X-axis to the left */
+
+  /* Y-axis to the bottom */
+  /* - Y-axis to the top */
 }
 
 .shape-6 {
   background-color: violet;
+  transition: all 4s ease;
+}
+
+.shape-6 img {
+  width: 100%;
+}
+
+.shape-6:hover {
+  transform: scale(1.4) rotate(40deg) translateY(40px);
 }
