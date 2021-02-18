@@ -17,6 +17,7 @@ body {
 .header {
   width: 100vw;
   min-height: 80px;
+  position: relative;
 }
 .navbar {
   height: 80px;
@@ -44,6 +45,15 @@ body {
   height: 100%;
   align-items: center;
   justify-content: center;
+}
+
+.side-navbar {
+  position: absolute;
+  width: 100vw;
+  height: 80vh;
+  background-color: red;
+  top: 81px;
+  left: -450px;
 }
 
 /* ---------- Header end ---------*/ ;
