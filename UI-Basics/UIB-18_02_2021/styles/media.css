@@ -13,6 +13,11 @@
   .large-devices {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 80px;
+    align-items: center;
+  }
+  .navbar-items {
+    justify-content: space-around;
   }
   .small-devices {
     display: none;

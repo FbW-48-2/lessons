@@ -96,9 +96,14 @@ body {
   color: red;
 }
 
-.side-navbar > div:nth-child(even) {
+.side-navbar > div:nth-child(even),
+.blogs-items > div:nth-child(even) {
   background-color: #eee;
 }
+
+/* .blogs-items > div:nth-child(odd) {
+  background-color: #ddd;
+} */
 .side-navbar > div {
   padding: 5px;
   text-align: center;
@@ -106,6 +111,44 @@ body {
 
 .large-devices {
   display: none;
+  cursor: pointer;
+}
+
+.blogs {
+  position: relative;
+}
+
+.blogs-items {
+  position: absolute;
+  top: 90px;
+  left: -80px;
+  background-color: #ddd;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  padding-top: 10px;
+  display: none;
+}
+.blogs-items > div {
+  padding: 5px;
+  transition: all 0.3s ease-out;
+}
+
+.blogs-items > div:hover {
+  transform: scale(1.2);
+}
+
+.blogs:hover .blogs-items {
+  display: block;
+}
+
+.blogs-items:hover {
+  display: block;
+}
+
+.navbar-items > div {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 /* ---------- Header end ---------*/ ;
