@@ -10,3 +10,5 @@ body {
   font-family: "Open Sans", sans-serif;
   line-height: 130%;
 }
+
+/* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
