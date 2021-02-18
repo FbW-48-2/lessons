@@ -51,9 +51,57 @@ body {
   position: absolute;
   width: 100vw;
   height: 80vh;
-  background-color: red;
+  background-color: #ddd;
   top: 81px;
   left: 100vw;
+  display: none;
+  transition: all 1s ease-in-out;
+}
+
+#menu-input:checked ~ .side-navbar {
+  left: 0;
+  display: block;
+}
+
+#menu-input {
+  display: none;
+}
+
+.menu-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bars {
+  position: absolute;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  transition: all 0.2s ease-in-out;
+}
+
+.times {
+  position: absolute;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+#menu-input:checked ~ .menu-icon .bars {
+  color: transparent;
+}
+
+#menu-input:checked ~ .menu-icon .times {
+  color: red;
+}
+
+.side-navbar > div:nth-child(even) {
+  background-color: #eee;
+}
+.side-navbar > div {
+  padding: 5px;
+  padding-left: 10px;
 }
 
 /* ---------- Header end ---------*/ ;
