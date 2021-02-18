@@ -10,6 +10,13 @@
 /* ---------- END Small devices ---------------- */
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .large-devices {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .small-devices {
+    display: none;
+  }
 }
 
 /* ---------- END Medium devices ---------------- */
