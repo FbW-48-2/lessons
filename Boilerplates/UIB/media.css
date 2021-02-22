@@ -1,0 +1,25 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+}
+
+/* ---------- END Extra small devices ---------------- */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* ---------- END Small devices ---------------- */
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+}
+
+/* ---------- END Medium devices ---------------- */
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* ---------- END Large devices ---------------- */
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* ---------- END Extra large devices ---------------- */

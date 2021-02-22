@@ -1,0 +1,38 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin-top: 10px;
+}
+
+.task-one {
+    background-color: aqua;
+}
+
+.task-one:before {
+    content: "Once upon a time ... ";
+    font-weight: bold;
+    font-style: italic;
+    background-color: cornflowerblue;
+}
+
+.task-one:after {
+    content: "... The end";
+    font-weight: bold;
+    font-style: italic;
+    background-color: cornflowerblue;
+    width: 200px;
+}
+
+.task-two {
+    background: url('./assets/beach.jpg');
+    width: 500px;
+    height: 400px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);    
+}
+
+.task-three {
+    transform: rotate(180deg);   
+}

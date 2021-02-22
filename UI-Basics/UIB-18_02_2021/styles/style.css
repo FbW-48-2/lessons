@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,700&display=swap");
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: whitesmoke;
+  font-size: 1.8rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 130%;
+}
+
+/* transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay]; */
+
+/* ---------- Header start ---------*/
+.header {
+  width: 100vw;
+  min-height: 80px;
+  position: relative;
+}
+.navbar {
+  height: 80px;
+  background-color: white;
+  border-bottom: 1px solid rgba(78, 75, 75, 0.26);
+}
+.small-devices {
+  height: 100%;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.menu {
+  height: 100%;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+}
+
+.login {
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-navbar {
+  position: absolute;
+  width: 80vw;
+  height: 80vh;
+  background-color: #ddd;
+  top: 81px;
+  left: -100vw;
+  /* display: none; */
+  transition: all 1s ease-in-out;
+}
+
+#menu-input:checked ~ .side-navbar {
+  left: 0;
+  /* display: block; */
+}
+
+#menu-input {
+  display: none;
+}
+
+.menu-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bars {
+  position: absolute;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  transition: all 0.3s ease-in-out;
+}
+
+.times {
+  position: absolute;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+#menu-input:checked ~ .menu-icon .bars {
+  color: transparent;
+}
+
+#menu-input:checked ~ .menu-icon .times {
+  color: red;
+}
+
+.side-navbar > div:nth-child(even),
+.blogs-items > div:nth-child(even) {
+  background-color: #eee;
+}
+
+/* .blogs-items > div:nth-child(odd) {
+  background-color: #ddd;
+} */
+.side-navbar > div {
+  padding: 5px;
+  text-align: center;
+}
+
+.large-devices {
+  display: none;
+  cursor: pointer;
+}
+
+.blogs {
+  position: relative;
+}
+
+.blogs-items {
+  position: absolute;
+  top: 90px;
+  left: -80px;
+  background-color: #ddd;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  padding-top: 10px;
+  display: none;
+}
+.blogs-items > div {
+  padding: 5px;
+  transition: all 0.3s ease-out;
+}
+
+.blogs-items > div:hover {
+  transform: scale(1.2);
+}
+
+.blogs:hover .blogs-items {
+  display: block;
+}
+
+.blogs-items:hover {
+  display: block;
+}
+
+.navbar-items > div {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+/* ---------- Header end ---------*/ ;

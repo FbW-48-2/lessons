@@ -1,0 +1,57 @@
+.animation1 {
+   animation: move 3s 1s forwards;
+    
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+
+.animation-2 {
+    height: 200px;
+    width: 200px;
+    margin: 20%;
+    background-color: lawngreen;
+}
+
+.animation-2:hover {
+    animation: fancy 2s ease-in 3;
+    opacity: 0.5;
+}
+
+@keyframes fancy {
+    50% {
+        transform: scale(1.4) rotate(80deg);
+    }
+
+    /* 75% {
+        transform: scale(1.2) rotate(40deg);
+    } */
+    100% {
+        transform: scale(1) rotate(0deg);
+    }
+
+}
+
+/* animista */
+
+.text-blur-out {
+    font-size: 3rem;
+    margin: 30%;
+	animation: text-blur-out 3s 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+@keyframes text-blur-out {
+    0% {
+      filter: blur(0.01);
+    }
+    100% {
+      filter: blur(12px) opacity(0%);
+    }
+  }
+  

@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+
+:root {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Work Sans", sans-serif;
+  background: #dddddd;
+  padding: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header & Nav */
+
+header {
+  width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  padding: 3rem 2.5rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 20px;
+}
+
+header p {
+  margin-left: 1.4rem;
+}
+
+.header-nav li {
+  display: inline-block;
+  margin-left: 1.4rem;
+  list-style: none;
+}
+
+/* Main Content */
+
+main,
+footer {
+  width: 60rem;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* Intro Text */
+
+h1 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.intro {
+  font-size: 1.6rem;
+  font-weight: 100;
+  padding: 2rem 0;
+}
+
+.intro-text {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.intro-text p {
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+/* Button Styling */
+
+a.button {
+  background: #000;
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px;
+  position: relative;
+  left: 30rem;
+}
+
+a.button img {
+  height: 10px;
+  position: relative;
+  top: 2px;
+}
+
+/* Images */
+
+article {
+  position: relative;
+  height: 30rem;
+  margin-right: 1rem;
+  padding: 30px;
+  font-size: 12px;
+  color: #fff;
+  background-image: url("images/white-box.jpg");
+  /* resize the image to always cover the element */
+  background-size: cover;
+  /* reposition the image inside the element */
+  background-position: center;
+}
+
+.article-section {
+  padding-bottom: 1rem;
+  display: flex;
+}
+
+.article-2 {
+  background-image: url("images/room.jpg");
+  background-position: left center;
+}
+
+.article-3 {
+  background-image: url("images/black-white.jpg");
+}
+
+article h2 {
+  margin: 2.5rem 0;
+  text-shadow: -5px 0px 20px rgb(47, 47, 47);
+}
+
+article img {
+  background: #fff;
+  border-radius: 50%;
+  height: 2rem;
+  padding: 5px;
+  box-shadow: 0 0 0px 5px rgba(255, 255, 255, 0.25);
+  /* reposition the arrow in the article */
+  position: absolute;
+  bottom: 30px;
+}
+
+article img:hover {
+  box-shadow: 0 0 0px 5px rgba(255, 255, 255, 1);
+}
+
+/* Footer */
+
+footer {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+footer {
+  font-size: 1.2rem;
+  color: grey;
+}
