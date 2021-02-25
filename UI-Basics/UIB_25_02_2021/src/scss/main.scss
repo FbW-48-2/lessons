@@ -1,2 +1,35 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+$w-100: 100%;
+$bg-color: #ddd;
+
+.header {
+  width: $w-100;
+  background-color: $bg-color;
+  display: flex;
+  .navbar {
+    width: $w-100;
+    .logo {
+      color: blue;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.main {
+  height: 60vh;
+}
+
+.footer {
+  width: $w-100;
+  background-color: $bg-color;
+  text-align: center;
+  color: green;
+}
