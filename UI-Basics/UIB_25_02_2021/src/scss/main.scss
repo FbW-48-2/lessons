@@ -1,9 +1,11 @@
 // This is where you can import other stylesheets or write your scss code
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+/* SASS variables  $key: value*/
 $w-100: 100%;
 $bg-color: #ddd;
 
+/* SASS nesting */
 .header {
   width: $w-100;
   background-color: $bg-color;
@@ -23,8 +25,28 @@ $bg-color: #ddd;
   }
 }
 
+$brands-colors: (
+  "color-1": pink,
+  "color-2": #7a44ff,
+);
+
 .main {
   height: 60vh;
+  display: flex;
+  div {
+    border: 1px solid #ddd;
+    width: 32%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-1 {
+    background-color: map-get($brands-colors, "color-2");
+  }
+  .box-3 {
+    background-color: map-get($brands-colors, "color-1");
+  }
 }
 
 .footer {
