@@ -1,0 +1,326 @@
+/* CSS variables */
+:root {
+  --bg-color: #031321;
+  --primary-color: #2196f3;
+  --secondary-color: #255784;
+}
+
+/* reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: Helvetica;
+}
+
+/* Navigation - Dropdown Menu  */
+nav {
+  width: 100%;
+  height: 70px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 0 8px #3a3a3a;
+  margin-bottom: 20px;
+  z-index: 1000;
+}
+nav ul {
+  display: inline-flex;
+  list-style: none;
+}
+nav ul .item {
+  margin: 0 25px;
+  padding: 10px 0;
+}
+.item a {
+  color: black;
+}
+.item:hover > a {
+  color: #d5d5d5;
+}
+.fa {
+  margin-right: 10px;
+}
+.fa-angle-down {
+  margin-left: 10px;
+}
+.item:hover a .fa:not(.fa-angle-down) {
+  transform: scale(1.7);
+  color: #faac04;
+}
+.sub-menu-1 {
+  display: none;
+}
+.item:nth-child(2),
+.item:nth-child(3) {
+  position: relative;
+}
+.item:hover .sub-menu-1 {
+  display: block;
+  width: 200px;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  background: #f5f5f5;
+  box-shadow: 5px 5px 10px #d5d5d5;
+  z-index: 1000;
+}
+.item:hover .sub-menu-1 ul {
+  display: block;
+  margin: 20px;
+}
+.item:hover .sub-menu-1 ul li {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(250, 172, 4, 0.3);
+}
+.item:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+.sub-menu-1 ul li:hover > a {
+  color: #d5d5d5;
+}
+.fa-angle-right {
+  float: right;
+}
+.sub-menu-2 {
+  display: none;
+  z-index: 1000;
+}
+.hover-me {
+  position: relative;
+}
+.hover-me:hover .sub-menu-2 {
+  display: block;
+  position: absolute;
+  width: 200px;
+  right: -200px;
+  top: 0;
+  color: black;
+  background: #f5f5f5;
+  box-shadow: 5px 5px 10px #d5d5d5;
+}
+
+/*  Banner - with clip-path property and animation */
+
+.banner {
+  width: 100%;
+  height: calc(100vh - 90px);
+  background: radial-gradient(#03a9f4, #004b6c);
+  position: relative;
+  z-index: 500;
+}
+.banner .info {
+  position: absolute;
+  top: 50px;
+  left: 45%;
+  cursor: pointer;
+  background: #03a9f4;
+  box-shadow: 3px 3px 40px white;
+  height: 200px;
+  width: 300px;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  border-radius: 6px;
+  clip-path: circle(20px at 30px 30px);
+  transition: all 0.5s linear;
+  z-index: 1000;
+  animation: swing linear 3s infinite;
+}
+.banner .info:hover {
+  clip-path: circle(400px at 30px 30px);
+  animation: none;
+}
+.info-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  background: #ff1493;
+}
+.info:hover .info-icon {
+  background: #ff69b4;
+}
+.info-text {
+  padding: 8px 12px;
+  position: relative;
+}
+.info-text img {
+  transform: scale(0.5);
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+.info-description {
+  margin-top: 8px;
+  text-align: center;
+}
+
+.banner h1:nth-child(1) {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 65px;
+  animation: nudge 8s linear infinite alternate;
+}
+
+.banner h1:nth-child(1):before {
+  content: attr(data-text1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom;
+  transform: rotateX(180deg);
+  line-height: 0.865em;
+  background: linear-gradient(0deg, #fff 0, transparent 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0.5;
+}
+
+.banner h1:nth-child(2) {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 65px;
+  animation: nudge 10s linear infinite alternate;
+}
+
+.banner h1:nth-child(2):before {
+  content: attr(data-text2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom;
+  transform: rotateX(180deg);
+  line-height: 0.865em;
+  background: linear-gradient(0deg, #fff 0, transparent 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  opacity: 0.5;
+}
+
+/* animation part */
+@keyframes nudge {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-500px, 0);
+  }
+
+  75% {
+    transform: translate(50px, 0);
+  }
+}
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(0, 15px);
+  }
+
+  66% {
+    transform: translate(0, -15px);
+  }
+}
+
+/* section button - with animation */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  padding: 30px;
+}
+.btn {
+  position: relative;
+  display: block;
+  padding: 15px 30px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  text-decoration: none;
+  font-size: 30px;
+  overflow: hidden;
+  transition: 0.2s;
+  margin: 0 30px;
+}
+.btn:hover {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  box-shadow: 0 0 20px var(--primary-color), 0 0 80px var(--primary-color),
+    0 0 160px var(--primary-color), 0 0 320px var(--primary-color);
+  transition-delay: 1s;
+}
+
+.btn span {
+  position: absolute;
+  display: block;
+}
+.btn span:nth-child(1) {
+  top: 0;
+  transform: translateX(-115%);
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--primary-color));
+}
+.btn:hover span:nth-child(1) {
+  transform: translateX(100%);
+  transition: 1s;
+}
+.btn span:nth-child(3) {
+  bottom: 0;
+  transform: translateX(100%);
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(270deg, transparent, var(--primary-color));
+}
+.btn:hover span:nth-child(3) {
+  transform: translateX(-115%);
+  transition: 1s 0.5s;
+}
+.btn span:nth-child(2) {
+  right: 0;
+  transform: translateY(-130%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--primary-color));
+}
+.btn:hover span:nth-child(2) {
+  transform: translateY(100%);
+  transition: 1s 0.25s;
+}
+.btn span:nth-child(4) {
+  left: 0;
+  transform: translateY(100%);
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--primary-color));
+}
+.btn:hover span:nth-child(4) {
+  transform: translateY(-130%);
+  transition: 1s 0.75s;
+}
