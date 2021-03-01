@@ -1,0 +1,151 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    height: 9rem;
+    h1 {
+        font-size: 4rem;
+        font-family: var.$font-stack-secondary;
+        padding: 2.5rem;
+        color: var.$font-color;
+    }
+}
+
+.colors {
+    @include mix.flex-column;
+
+
+    .color {
+        height: 100%;
+        width: 15rem;
+        @include mix.flex-column;
+        margin: .5rem;
+
+        &__details {
+            font-family: var.$font-stack-primary;
+            font-size: 1.5rem;
+            padding: .5rem;
+            @include mix.border;
+            width: 15rem;
+            color: var.$font-color;
+        }
+
+        &__one {
+           @include mix.color(var.$color-one);
+        }
+
+        &__two {
+            @include mix.color(var.$color-two);
+        }
+
+        &__three {
+            @include mix.color(var.$color-three);
+        }
+
+        &__four {
+            @include mix.color(var.$color-four);
+        }
+    }
+
+}
+
+.shades {
+    @include mix.flex-column;
+    margin-top: 2rem;
+
+    .shade {
+        @include mix.flex-column;
+        width: 15rem;
+        margin: .5rem;
+
+        &__color {
+            @include mix.flex-row;
+
+            &-1 {
+                @include mix.shade(var.$color-one);
+    
+            }
+    
+            &-1-darken {
+                @include mix.shade(darken(var.$color-one, var.$percent));
+    
+            }
+    
+            &-1-lighten {
+                @include mix.shade(lighten(var.$color-one, var.$percent));
+    
+            }
+    
+            &-2 {
+                @include mix.shade(var.$color-two);
+    
+            }
+    
+            &-2-darken {
+                @include mix.shade(darken(var.$color-two, var.$percent));
+    
+            }
+    
+            &-2-lighten {
+                @include mix.shade(lighten(var.$color-two, var.$percent));
+    
+            }
+    
+            &-3 {
+                @include mix.shade(var.$color-three);
+    
+            }
+    
+            &-3-darken {
+                @include mix.shade(darken(var.$color-three, var.$percent));
+    
+            }
+    
+            &-3-lighten {
+                @include mix.shade(lighten(var.$color-three, var.$percent));
+    
+            }
+    
+            &-4 {
+                @include mix.shade(var.$color-four);
+    
+            }
+    
+            &-4-darken {
+                @include mix.shade(darken(var.$color-four, var.$percent));
+    
+            }
+    
+            &-4-lighten {
+                @include mix.shade(lighten(var.$color-four, var.$percent));
+    
+            }
+        }
+
+        &__details {
+            width: 15rem;
+            text-align: left;
+            font-family: var.$font-stack-primary;
+            color: var.$font-color;
+            font-size: 1.5rem;
+            padding: 1rem;
+            @include mix.border;
+        }
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+    .colors, .shades {
+        @include mix.flex-row;
+    }
+
+}
