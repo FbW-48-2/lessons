@@ -1,0 +1,24 @@
+@use "./variables";
+
+// mixins
+@mixin color($bg-color) {
+    height: 9rem;
+    width: 15rem;
+    background-color: $bg-color;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+

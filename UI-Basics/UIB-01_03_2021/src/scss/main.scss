@@ -1,2 +1,7 @@
-// This is where you can import other stylesheets or write your scss code
+
+/*! before I would use @import but new best practice is to use @forward */
+@forward "./variables";
+@forward './layout';
+
+// This import should be at the bottom of every @forward
 @import "../../node_modules/bootstrap/scss/bootstrap";

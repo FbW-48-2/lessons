@@ -1,0 +1,63 @@
+@use "./variables" as var;
+@use "./mixins" as mix;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    height: 9rem;
+    h1 {
+        font-size: 4rem;
+        font-family: var.$font-stack-secondary;
+        padding: 2.5rem;
+        color: var.$font-color;
+    }
+}
+
+.colors {
+
+    @include mix.flex-column;
+
+    .color {
+        height: 100%;
+        width: 15rem;
+        @include mix.flex-column;
+        margin: .5rem;
+
+        &__details {
+            font-family: var.$font-stack-primary;
+            font-size: 1.5rem;
+            padding: .5rem;
+            width: 15rem;
+            color: var.$font-color;
+        }
+
+        &__one {
+            @include mix.color(var.$color-one);
+        }
+
+        &__two {
+            @include mix.color(var.$color-two);
+        }
+
+        &__three {
+            @include mix.color(var.$color-three);
+        }
+
+        &__four {
+            @include mix.color(var.$color-four);
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .colors {
+        @include mix.flex-row;
+    }
+}
