@@ -1,0 +1,70 @@
+@use "./mixins" as mix;
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.page {
+    min-height: 100vh;
+    background-color: rgb(235, 129, 235);
+    padding: 20px 40px;
+}
+
+.page--center {
+    @include mix.center;
+}
+
+ul {
+    @include mix.reset-list;
+}
+
+.hidden {
+    @include mix.hide;
+}
+
+.triangle-example {
+    &::before,
+    &::after {
+        display: block;
+        content: '';
+        margin: 8px;
+    }
+
+    &::before {
+        @include mix.triangle(up);
+    }
+
+    &::after {
+        @include mix.triangle(down);
+    }
+}
+
+.reveal-animation-example {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    @include mix.fade-in(2s);
+}
+
+.text-xs {
+    @include mix.font-size(xs);
+}
+.text-sm {
+    @include mix.font-size(sm);
+}
+.text-m {
+    @include mix.font-size(m);
+}
+
+.text-l {
+    @include mix.font-size(l);
+}
+
+.text-xl {
+    @include mix.font-size(xl);
+}
+
+.text-xxl {
+    @include mix.font-size(xxl);
+}
