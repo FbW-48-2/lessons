@@ -180,7 +180,7 @@ const num = parseInt(input);
 
 console.log(num); // NaN
 ```
-###**infinity** 
+### infinity 
 >Infinity represents the mathematical Infinity ∞. It is a special value that’s greater than any number.
 
 We can get it as a result of division by zero:
