@@ -46,7 +46,24 @@ if(Math.sign(num)=== -1){
 }
 
 // Max 
-console.log(Math.max(1,2,3,88,9))
-// min 
-console.log(Math.min(1,2,3,88,9))
-// random 
+// console.log(Math.max(1,2,3,88,9))
+// // min 
+// console.log(Math.min(1,2,3,88,9))
+// // random 
+let myRandom = Math.random();  // the range is from 0 to 1
+
+myRandom = Math.round( Math.random()* 10 ) // changing the range form 0 to 10
+// another option 
+myRandom = Math.floor( Math.random()* 10+1 ) // changing the range from 0 to 10
+
+console.log('random : ',myRandom);          
+
+// NaN 
+console.log( typeof NaN)
+console.log(10 / 'a2');
+console.log(Number('105A'))
+console.log(100 + (0 / 0))
+console.log('0 / 0 ',0 / 0)
+console.log('1000/0', 1000/0 )
+//infinity
+console.log(Math.pow(10, 100))
