@@ -1,3 +1,4 @@
+// from SPA
 let rootElement = document.querySelector("#root");
 let pickUpElementButton = document.querySelector("#pick_up");
 let restartElementButton = document.querySelector("#restart");
@@ -37,13 +38,16 @@ const getUniqueElement = () => {
 };
 
 function onPickUpHandler() {
+  // from SPA
   rootElement.innerHTML = getUniqueElement();
 }
 
 function onRestartHandler() {
+  // from SPA
   rootElement.innerHTML = "";
 }
 
+// from SPA
 pickUpElementButton.addEventListener("click", onPickUpHandler);
 restartElementButton.addEventListener("click", onRestartHandler);
 //console.log(getUniqueElement());
