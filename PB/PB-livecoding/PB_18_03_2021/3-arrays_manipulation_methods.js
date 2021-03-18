@@ -77,6 +77,9 @@ const chrs = ["a", "b", "c", "Hallo", true, "welcome to array", "Alex", 99];
 chrs.splice(4, 3);
 
 console.log(chrs);
-
 // true, "welcome to array", "Alex" => 3 elements
+// ["a", "b", "c", "Hallo", 99];
+chrs.splice(2, 0);
+
+console.log(chrs);
 // ["a", "b", "c", "Hallo", 99];

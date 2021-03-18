@@ -13,6 +13,13 @@
 ****fromIndex -  The index at which to begin the search.
 
 */
+
+const colors = ["red", "blue", "pink"];
+
+console.log(colors.indexOf("blue")); // 1
+
+console.log(colors[1]); // blue
+
 //--------------###########--------------------------------------------------------
 
 /**
@@ -22,3 +29,7 @@
 
 **** startIndex - The position in this array at which to begin searching for valueToFind
  */
+
+console.log(colors.includes("pink")); // true
+console.log(colors.includes("yellow")); // false
+console.log(colors.includes("Pink")); // false

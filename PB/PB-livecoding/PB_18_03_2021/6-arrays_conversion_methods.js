@@ -9,6 +9,25 @@
  separator − Specifies a string to separate each element of the array. If omitted, the array elements are separated with a comma.
  */
 
+const colors = ["pink", "blue", "red", "yellow"];
+
+console.log(colors.join()); // pink,blue,red,yellow
+
+console.log(colors.join("/")); // pink/blue/red/yellow
+
+console.log(colors.join(" ")); // pink blue red yellow
+
+console.log(colors.join("!")); // pink!blue!red!yellow
+console.log(colors.join(" # ")); // pink # blue # red # yellow
+
+console.log(colors.join("\n"));
+
+/**
+pink
+blue
+red
+yellow
+ */
 //-------------------🤖🤖🤖🤖------------
 
 // Task
