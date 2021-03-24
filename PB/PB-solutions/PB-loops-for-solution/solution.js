@@ -123,13 +123,12 @@ for (let i = 0; i <= 4; ) {
 }
 
 //Q8
+let word = "Anna";
 
-const word = "Anna";
+let wordToArray = word.toLowerCase().split("").reverse();
 
-const wordArray = word.toLowerCase().split("");
-
-if (wordArray == wordArray.reverse().join("")) {
-  console.log(`${word} is a palindrome!`);
+if (word.toLowerCase() == wordToArray.join("")) {
+  console.log(true);
 } else {
-  console.log(`${word} is not a palindrome :(`);
+  console.log(false);
 }
