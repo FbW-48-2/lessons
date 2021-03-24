@@ -6,6 +6,8 @@ function greeting() {
   console.log("Hallo world!"); // Hallo world!
 }
 
+// console.log as a "preview"
+
 console.log(greeting()); // undefined
 
 function greetingWithReturn() {
