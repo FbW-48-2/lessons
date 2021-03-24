@@ -5,3 +5,28 @@
 // function name() {
 //     body of the function
 // }
+
+function firstFunction() {
+  // function body
+  console.log("welcome to functions!");
+}
+
+firstFunction();
+firstFunction();
+firstFunction();
+firstFunction();
+firstFunction();
+
+//###############
+
+function evenOrOdd() {
+  let num = 4;
+
+  if (num % 2 == 0) {
+    console.log(`${num} is: even`);
+  } else {
+    console.log(`${num} is: odd`);
+  }
+}
+
+evenOrOdd();
