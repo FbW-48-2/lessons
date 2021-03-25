@@ -62,6 +62,7 @@ const getGroups = (groupMemes) => {
   return groups;
 };
 
+//<li style='text-align: left'>test</li>
 function listItemTemplate(memes) {
   let temp = "";
   for (let i = 0; i < memes.length; i++) {
@@ -73,21 +74,21 @@ function listItemTemplate(memes) {
 function render() {
   let teamSize = teamSizeInput.value;
   // from SPA
-  if (!!teamSize && typeof teamSize === "number") {
-    const groups = getGroups(teamSize);
-    let temp = "";
-    for (let i = 0; i < groups.length; i++) {
-      temp += `<div > Group: ${i + 1}</div>
+
+  const groups = getGroups(teamSize);
+  let temp = "";
+  for (let i = 0; i < groups.length; i++) {
+    temp += `<div > Group: ${i + 1}</div>
     <ol style='color: #000 '>
     ${listItemTemplate(groups[i])}
     </ol>
     <hr>
     `;
-    }
-    rootElement.innerHTML = temp;
   }
+  rootElement.innerHTML = temp;
 }
 
 // from SPA
 pickUpElementButton.addEventListener("click", render);
 restartElementButton.addEventListener("click", onRestartHandler);
+//console.log(getUniqueElement());
