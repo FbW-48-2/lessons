@@ -168,11 +168,74 @@ let personA = {
     ]
 }
 
-console.log(personA.name.firstName);
-console.log(personA.experiences);
+// console.log(personA.name.firstName);
+// console.log(personA.experiences);
 
 let arr = personA.experiences; // experiences 
 
-for(let i = 0 ; i < arr.length ; i++ ){
-    console.log(arr[i].company , arr[i].dutration, arr[i].job);
+// for(let i = 0 ; i < arr.length ; i++ ){
+//     console.log(arr[i].company , arr[i].dutration, arr[i].job);
+// }
+
+// let personB = {
+//     age : 35
+// }
+// console.log(personA.age === personB.age);
+//########################################################
+// write a function to generate an object 
+
+function createUser(firstName , lastName ){
+
+    return {
+        firstName ,
+        lastName 
+    }
 }
+
+// console.log(createUser("Max" , "Doe"));
+
+let name = "Alex" ;
+let age = 33;
+let personC = { name, age}
+
+// add new property to the object : info
+personC.info = function (){ return personC.name +" "+  personC.age }
+// console.log(personC);
+// console.log(personC.info());
+
+
+// console.log(personC.address === undefined); 
+//#################################################################
+
+// Object.keys ==> array from the keys 
+console.log(Object.keys(personA));
+console.log(Object.keys(personA).length);
+
+// access the nested object keys of address 
+console.log(Object.keys(personA.address));
+
+// Object.values ==> values of my object 
+
+console.log(Object.values(personA.address));
+
+
+console.log(Object.keys(personA.experiences[0])); // the keys of the first experinces 
+console.log(Object.values(personA.experiences[0]));
+
+console.log('age' in personA); // TRUE
+
+const ageArray = Object.keys(personA.age) // empty array personA.age is not an object 
+console.log(ageArray); // [] 
+
+const addressArray = Object.keys(personA.address)
+console.log(addressArray);  // [ 'city', 'street', 'country' ]
+
+console.log(typeof  personA.address);
+
+// Object.entries
+//console.log(Object.entries(personC));
+const entries = Object.entries(personA);
+console.log(entries[4][1][0].company);
+console.log(entries[2]);
+
+//###############################################################
