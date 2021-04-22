@@ -62,6 +62,6 @@ console.log( k , l   ); // 10 44
 
 let numbersArr = [2,3,4]
 
-console.log(Math.max(2,3,4));
-console.log(Math.max(...numbersArr));
-console.log(...numbersArr);
+console.log(Math.max(2,3,4)); // 4 
+console.log(Math.max(...numbersArr)); // 4 
+console.log(...numbersArr); // 2 3 4
