@@ -238,4 +238,4 @@ const entries = Object.entries(personA);
 console.log(entries[4][1][0].company);
 console.log(entries[2]);
 
-//###############################################################
+//###############################################################person['age'
