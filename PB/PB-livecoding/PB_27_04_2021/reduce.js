@@ -23,14 +23,14 @@ let sum = 0 ;
 for(let i = 0 ; i < nums.length ; i++){
     sum +=  nums[i];
 }
-console.log("avg ",sum / nums.length);
+//console.log("avg ",sum / nums.length);
 
 // using reduce 
 let avg = nums.reduce(function(acc , item , index,arr ){ 
     
  return acc + item 
 }, 0 ) / nums.length;
-console.log("avg" ,avg);
+//console.log("avg" ,avg);
 
 
 let users = [
@@ -135,6 +135,38 @@ let users = [
      //create new key                   //  create a new valuevalue 
        return  acc
    },{}) // initial value of the accumulator as empty object 
-   console.log( userResult);
+   //console.log( userResult);
+// let prices = [40,55,20,10]
+// // amount the previous item
+// // item : the current element 
+// let amountPrice = prices.reduce(function(amount,item){
+//   console.log(amount , item)
+  
+//   return amount + item
 
+// } )
+//    console.log(amountPrice);
+
+
+let str = [ "java" , "go" , "visual basic" ,"php"];
+let newStr = str.reduce(function(total , item , index){
+      if(item.length > 2){
+        //total.push(item)
+        total[index] = item
+      }
+        return total
    
+},{})
+console.log(newStr)
+
+
+
+
+
+
+
+
+
+
+
+
