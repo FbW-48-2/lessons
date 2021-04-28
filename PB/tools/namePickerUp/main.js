@@ -4,7 +4,7 @@ let pickUpElementButton = document.querySelector("#pick_up");
 let restartElementButton = document.querySelector("#restart");
 
 const students = [
-  "Ebony",
+  
   "Shinhee",
   "Habid",
   "Lucas",
