@@ -60,3 +60,81 @@ getLanguage(function(item){
     } 
 
 })
+
+// #####################################
+// example1 about Synchronous callback 
+let numbers = [99,1,55,10,6,8];
+numbers.sort( function(a,b){
+ return a-b
+});
+
+//console.log(numbers);
+
+//#####################################
+
+// example 2 
+function first(callback){  
+    // Simulate a code delay  
+    setTimeout( function(){  
+      console.log(1); 
+      callback(); 
+    }, 500 );    
+  }
+function second(){  
+console.log(2);  
+}
+  //first(second);
+  
+  //second();
+
+  //################################################
+  // example 3  downloading a video and edit the video 
+//   function download(url){
+//     // downloading 
+//   }
+//   function edit(url){
+//       // editing 
+//   }
+//###########################################
+// function download(url){
+//     // downloading 
+//     console.log(" Downloading from "+ url + " ......");
+//   }
+//   function edit(url){
+//       // editing 
+//       console.log(" Editing the "+ video + " ......");
+//   }
+  
+//   download("youtube.com");
+//   edit("fun video")
+  // ##############################################
+//   function download(url){
+//     // downloading 
+//     setTimeout( function(){  
+//         console.log(" Downloading from "+ url + " ......");
+//       }, 500 );  
+   
+//   }
+//   function edit(url){
+//       // editing 
+//       console.log(" Editing the video from + url + " ......");
+//   }
+  
+//   download("youtube.com");
+//   edit("youtube.com")
+//#############################################
+function download(url , callback){
+    // downloading 
+    setTimeout( function(){  
+        console.log(" Downloading from "+ url + " ......");
+        callback(url)
+      }, 500 );  
+   
+  }
+  function edit(url){
+      // editing 
+      console.log(" Editing the   video from " +url + " ......");
+  }
+  
+  download("youtube.com" , edit);
+  
