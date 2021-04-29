@@ -123,18 +123,21 @@ console.log(2);
 //   download("youtube.com");
 //   edit("youtube.com")
 //#############################################
-function download(url , callback){
+function download( callback , url ){
     // downloading 
     setTimeout( function(){  
         console.log(" Downloading from "+ url + " ......");
-        callback(url)
+        let name = "javascript array methods"
+        
+        callback(name , url )
       }, 500 );  
    
   }
-  function edit(url){
+  function edit(videoName , videoUrl ){
       // editing 
-      console.log(" Editing the   video from " +url + " ......");
+      console.log(` Editing the   ${videoName} from ${videoUrl}  ......`);
   }
   
-  download("youtube.com" , edit);
+  download( edit ,"youtube.com");
+  
   
