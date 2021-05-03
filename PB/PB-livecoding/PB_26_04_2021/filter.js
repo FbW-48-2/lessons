@@ -39,3 +39,24 @@ function searchFood(arr, word){
 console.log(searchFood(fruits, "av"));
 console.log(searchFood(fruits, "ba"));
 console.log(searchFood(fruits, "app"));
+
+
+let numArr = [1,4,7,18,99,100];
+// >= 18 
+let arr1 = numArr.filter(function(item){
+    
+    if(item >= 18){
+          return item 
+    }
+    
+  
+})
+console.log(arr1);
+// numArr.map(function(item){
+//     return item 
+
+// })
+let string1 = "abcde"
+string1.split("").filter(function(item){
+    console.log(item);
+});
