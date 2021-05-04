@@ -1,3 +1,4 @@
+
 # Closure in Javascript
 ![enter image description here](https://www.thecreativedev.com/wp-content/uploads/2017/05/javascript-closure.png)
 ## What is closure?
@@ -273,4 +274,38 @@ return (number * factorial(number - 1));
 };
 
 console.log(factorial(6)); // 720
-```  
+``` 
+## Infinite Recursion
+
+Recursion have the Infinite loop danger. It's not hard to write a self-referencing function that'll crash your browser.
+```js
+//THIS RUNS FOREVER
+function start() {
+    console.log('starting..');
+    starting();
+}
+
+starting();
+// starting..
+// starting..
+// ...
+
+```
+
+### Base case
+
+This is known as the **base case**–our recursive `factorial` had one.
+```js
+if (number <= 0) { // terminal case
+
+return 
+
+}
+``` 
+ 
+## Summary
+- _Recursion is when a function calls itself until someone stops it_
+- _It can be used instead of a loop._
+- _If no one stops it, it'll recurse forever and crash your program._
+- _A **base case** is a condition that stops the recursion. Don't forget to add them!_ 
+- _Loops use extra state variables for tracking and counting, while recursion only uses the provided parameters._
