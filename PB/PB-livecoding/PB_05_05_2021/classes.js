@@ -11,8 +11,11 @@ class Person {
   add(){
       persons.push(this)
   }
-
+   output(){
+       console.log(this.name);
+   }
   info(){
+      this.output();
       return ` ${this.name} live in ${this.address} and work as ${this.job} `
   }
   changeAddress(address){
@@ -25,7 +28,7 @@ class Person {
 }
 const person =  new Person("Sara" ,"Berlin" , "React developer")
 const person2 = new Person("Max" , "New York" ,"UI Designer") 
-
+person.info()
 // console.log(  person ); // object 
 // console.log(  person2 ); // object 
 //person.changeAddress("London");
