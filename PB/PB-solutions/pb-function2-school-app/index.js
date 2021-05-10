@@ -52,9 +52,31 @@ let school =  [
      city: studentObj.city  })
   }
   createStudent({ classId:2 , name: 'Max', email: 'max@yahoo.com', city: 'London' });
-  console.log(school[1].students);
+  //console.log(school[1].students);
+
+  //###################################################################
+  // remove a class 
+
+  function removeClass(obj) {
+      let classIndex = obj.classId -1 ; 
+      school.splice(classIndex , 1);
       
-  
+  }
+  //removeClass({classId : 1});
+  console.log(school);
+
+//#####################################################################
+// remove a student 
+function  removeStudent(obj) {
+    let classIndex = obj.classId -1 ; 
+    let studentIndex = obj.studentId -1 ; 
+    school[classIndex].students.splice(studentIndex , 1 )    
+}
+console.log(school[0]);
+removeStudent({classId : 1 , studentId: 2})
+console.log(school[0]);
+
+ 
 
 
 
