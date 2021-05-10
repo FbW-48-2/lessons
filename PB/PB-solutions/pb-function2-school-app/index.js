@@ -75,7 +75,18 @@ function  removeStudent(obj) {
 // console.log(school[0]);
 // removeStudent({classId : 1 , studentId: 2})
 // console.log(school[0]);
+//######################################################################
+// Edit Student
+function editStudent(obj) {
+    let classIndex = obj.classID - 1;
+    let studentIndex = obj.studentID - 1;
+    delete obj.classID;
+    delete obj.studentID;
+    school[classIndex].students[studentIndex] = {...obj};
+  };
 
+
+//#######################################################################
  
 function  renderTemplate(){
     let template = "";
