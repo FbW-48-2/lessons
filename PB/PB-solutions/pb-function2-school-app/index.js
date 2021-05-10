@@ -72,11 +72,46 @@ function  removeStudent(obj) {
     let studentIndex = obj.studentId -1 ; 
     school[classIndex].students.splice(studentIndex , 1 )    
 }
-console.log(school[0]);
-removeStudent({classId : 1 , studentId: 2})
-console.log(school[0]);
+// console.log(school[0]);
+// removeStudent({classId : 1 , studentId: 2})
+// console.log(school[0]);
 
  
+function  renderTemplate(){
+    let template = "";
+    let totalStudents = 0;
+    template = " School Classes: " +"\n";
+    template += "------------------"+ "\n"  ;
+    if(school.length === 0 ){
+        template += "the school is empty! "+ "\n"
+    }
+    else{ // when we have at least one class in school 
+        for( let i = 0 ; i < school.length ;i++ ){
+          template += `${school[i].name} - (class ID : ${i +1}): \n `;
+          if(school[i].students.length === 0){
+              template += " the class is empty " + "\n"
+          }
+          else{
+              
+              for(let a = 0 ;  a < school[i].students.length ; a++){
+                  let student = school[i].students[a];
+                  template += `${a+1}- ${student.name}, ${student.email}, ${student.city} - (student ID: ${a+1} ) \n`
+                  totalStudents ++;
+
+              }
+              template += "******************************************** \n";              
+              
+          }
+
+        }
+    }  
+
+    template += "******************************************** \n"
+    template += `Total Classes ${school.length} Total Students ${totalStudents} `
+    return template;    
+}
+console.log(renderTemplate());
+
 
 
 
