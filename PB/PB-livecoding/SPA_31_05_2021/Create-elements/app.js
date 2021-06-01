@@ -16,4 +16,27 @@ p.innerText =" this is new paragraph created with js";
 
 main.appendChild(p);
 
+//parant.appendChild(element)
 
+//document.body.appendChild(p)
+
+const btn = document.querySelector('#btn');
+btn.textContent =" new button text";
+
+const btn2 = document.createElement('button');
+btn2.textContent = "button2";
+//main.appendChild(btn2)
+
+const img = document.createElement('img');
+img.src = "https://5.imimg.com/data5/BX/WZ/UM/SELLER-31579413/photo-manipulation-500x500.jpg";
+img.id = "ro"
+
+main.appendChild(img);
+
+const footer = document.querySelector('#footer')
+footer.appendChild(btn2);
+ //parent.appendChild(element)
+
+
+
+//document.querySelector('#ro').style.visibility = "hidden"

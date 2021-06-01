@@ -2,7 +2,7 @@ const main = document.querySelector('#main');
 //const main = document.getElementById('main');
 console.log(main);
 
-// Manipulating classes 
+// Manipulating classes
 // to add a class we need : .classList.add("className")
 main.classList.add('bigText');
 console.log(main.classList);
@@ -17,7 +17,7 @@ console.log(main.className);
 main.className +=" bold"
 console.log(main.className);
 
-// change the style 
+// change the style
 //main.style.background = "coral";
 main.style.paddingTop = "50px";
 main.style = "border:1px solid green;padding:20px";
@@ -37,7 +37,7 @@ main.innerHTML = "<p> Hello from DOM </p> <button> click me </button>";
 // console.log('innerHTML: ',main.innerHTML + "<div> hello Hello </div>");
 
 //#############################################################
-// textContent 
+// textContent
 //main.textContent ="text content"
 //main.querySelector('p').style.visibility = "hidden"
 console.log(main.textContent);
@@ -45,9 +45,12 @@ console.log(main.textContent);
 
 
 
- 
 
 
 
 
- 
+
+//  const div = document.querySelector('#main');
+//  div.style.visbility = "hidden"
+
+
