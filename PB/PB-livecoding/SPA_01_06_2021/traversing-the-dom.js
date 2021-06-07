@@ -59,3 +59,15 @@ result = ul.lastElementChild.previousSibling
 // result = ul.firstElementChild.firstElementChild.childNodes[1];
 // result.previousSibling.textContent ="previous "
 console.log(result);
+
+
+// const img = document.createElement('img');
+// img.src = "img.jpg";
+// // add img to body : document.body
+// document.body.appendChild(img)
+
+
+// const parent = document.querySelector('ul');
+// const el = parent.querySelector('li')
+// console.log('el: ',el);
+// el.style.backgroundColor = 'white'
