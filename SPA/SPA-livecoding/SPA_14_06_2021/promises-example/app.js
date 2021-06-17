@@ -33,6 +33,6 @@ const john = new Promise((resolve, reject)=>{
 
 Promise.all([max ,lara , john ]).then(data=>{
     console.log(data)
-})
+});
   
  

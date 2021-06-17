@@ -19,14 +19,14 @@ today = new Date();
 
 //console.log(today.getFullYear());
 
-console.log(today);
-console.log(today.getMonth());//  the Month
-console.log(today.getDate()); // the day 
-console.log(today.getFullYear()) // the year
-console.log(today.getHours());// hour 
-console.log(today.getMinutes()); // Minutes 
-console.log(today.getSeconds()) // secounds
-console.log(today.getMilliseconds()); // Milliseconds
+// console.log(today);
+// console.log(today.getMonth());//  the Month
+// console.log(today.getDate()); // the day 
+// console.log(today.getFullYear()) // the year
+// console.log(today.getHours());// hour 
+// console.log(today.getMinutes()); // Minutes 
+// console.log(today.getSeconds()) // secounds
+// console.log(today.getMilliseconds()); // Milliseconds
 
 // function timer(){
 //     const currentTime = new Date();
@@ -44,6 +44,26 @@ const currentDate = ()=>{
     `;  
     return result; 
 }
-setInterval(() => {
-    document.body.innerText =  currentDate();
-}, 100);
+// setInterval(() => {
+//     document.body.innerText =  currentDate();
+// }, 100);
+
+
+today = new Date().getTime(); // ms 
+
+console.log(today);
+console.log(new Date(1623236703472));
+today = new Date().getTime();
+
+let date1 = new Date('2000-05-05').getTime(); // ms
+let date2 =  new Date('1995-05-05').getTime(); // ms
+console.log(date1, date2);
+let date3 =  new Date(date1-date2);
+console.log(date3);
+
+// calculate your age accourding to birthdate 
+// console.log(Date.now()); // the current date in ms 
+// console.log(new Date('1980-06-21').getTime()); // birthday in ms
+// let difference = Date.now() - new Date('1980-06-21').getTime();
+// console.log(difference); 
+// console.log(new Date(difference).getFullYear() - 1970);
