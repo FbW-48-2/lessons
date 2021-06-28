@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.header{
+  height: 200px;
+  width: 100%;
+  background-color: aqua;
+}
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: aquamarine;
+ 
+  text-align: center;
+}
