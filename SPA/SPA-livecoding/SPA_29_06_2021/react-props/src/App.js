@@ -1,6 +1,7 @@
 
 import './App.css';
-import Car from './Components/Car'
+import Car from './Components/Car';
+import {CarClass}  from './Components/CarClass'
 function App() { 
   
   return (
@@ -16,8 +17,11 @@ function App() {
       </Car>
       <Car brand = "BMW" model = "X5" photo = "./images/bmw-x5.png" inStock={true} >
       <h4> Premium car</h4>
-      </Car>     
-        
+      </Car>  
+
+      <CarClass brand = "BMW" model = "X5" photo = "./images/bmw-x5.png" inStock={true} >
+      <h4> Premium car</h4>
+      </CarClass> 
     </div>  
 
    
