@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+.car{
+  border:1px solid blue;
+  margin:20px;
+  padding: 20px;
+}
+.car img{
+  width: 200px;
+ 
+}
