@@ -24,7 +24,7 @@ export default function Alerts(){
             <button onClick = { ()=> setError(!error)}> {error ? 'Hide error':'Show error' } </button>
 
             <h4> Notifications </h4>
-            <button onClick = {} > add notification</button>
+            <button onClick = {()=> { setNotifications([...notifications ,{ msg : "data loaded!!!  !! " ,type:"success"}])  }} > add notification</button>
              {
                notifications &&  notifications.map(item => {
                      return <h6> {item.msg} </h6>
