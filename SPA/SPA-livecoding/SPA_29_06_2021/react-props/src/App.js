@@ -1,7 +1,7 @@
 
 import './App.css';
 import Car from './Components/Car';
-import {CarClass}  from './Components/CarClass'
+import {Auto}  from './Components/Auto'
 function App() { 
   
   return (
@@ -19,9 +19,9 @@ function App() {
       <h4> Premium car</h4>
       </Car>  
 
-      <CarClass brand = "BMW" model = "X5" photo = "./images/bmw-x5.png" inStock={true} >
-      <h4> Premium car</h4>
-      </CarClass> 
+      <Auto brand = "BMW" model = "X5" photo = "./images/bmw-x5.png" inStock={true} >
+      <h4> class component</h4>
+      </Auto> 
     </div>  
 
    

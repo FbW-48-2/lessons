@@ -7,6 +7,7 @@ class Messages extends Component {
         color:"lightblue"
 
     }
+  
   render(){
       return (
       <div>

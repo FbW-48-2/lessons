@@ -9,7 +9,9 @@ export default function Alerts(){
 
     
    
-
+    function clickHandler(){
+        setGreet('Salut!!') 
+    }
     return (
 
         <div>
@@ -18,7 +20,7 @@ export default function Alerts(){
               <p>{ state.msg}</p> 
             }
           
-            <button onClick = {()=>  setGreet('Salut!!') }> change greet message</button>
+            <button onClick = {clickHandler }> change greet message</button>
             <button onClick = { ()=> setError(true)}> show error</button>
 
             <button onClick = { ()=> setError(!error)}> {error ? 'Hide error':'Show error' } </button>
