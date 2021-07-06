@@ -4,17 +4,17 @@ export class Switch extends Component {
     //state = { isOn : true}
     constructor(props){
         super(props)
-        this.state = { isOn : true}
+        this.state = { isOn : true  }
         this.clickHandler = this.clickHandler.bind(this)
     }
     clickHandler(){
-        this.setState({ isOn : !this.state.isOn}) 
+        this.setState({ isOn : !this.state.isOn }) 
     }
-
+    
     render() {
         return (
             <div>
-                <button onClick= { this.clickHandler }> {this.state.isOn ? 'ON' :'OFF'}</button>
+                <button onClick= {this.clickHandler}> {this.state.isOn ? 'ON' :'OFF'}</button>
             </div>
         )
     }

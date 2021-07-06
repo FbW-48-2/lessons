@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
+import React, { Component ,createRef } from 'react'
 
 export class Inputs extends Component {
-    input = React.createRef();
-    name = React.createRef()
+    input = createRef();
+    name = createRef()
     text = '';
     changeHandler(e){
         console.log(this.input.current.value);
