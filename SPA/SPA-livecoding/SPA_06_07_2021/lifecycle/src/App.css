@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.Header{
+  background-color: aqua;
+  padding:25px;
+  margin-bottom: 20px;
+}
+h4{
+  background-color: lightgray;
+  width:40%;  
+  margin: 0 auto;
+  padding: 5px;
+}
+h4:hover{
+  background-color: aqua;
+  cursor: pointer;
+}
+button{
+  margin :20px;
+}
