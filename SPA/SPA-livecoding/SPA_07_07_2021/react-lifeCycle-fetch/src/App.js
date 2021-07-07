@@ -5,9 +5,9 @@ export default class App extends Component {
     super(props);
     this.state = {
       data : [],
-      source : 'todos'
-    }
-  
+      source : 'users',
+      sources : ['users','todos','photos','albums','comments','posts']
+    }  
 
   }
   async fetchData(url){
@@ -17,17 +17,28 @@ export default class App extends Component {
     this.setState({ data : result})
 
   }
-  componentDidUpdate(){
+  updateSource = (val)=>{
+    this.setState({source : val});
+    this.fetchData(`https://jsonplaceholder.typicode.com/${this.state.source}`);
 
   }
+  
+  componentDidUpdate(){
+   // 
+  }
   componentDidMount(){
-    console.log('component did mount !!');
-    this.fetchData(`https://jsonplaceholder.typicode.com/${this.state.source}`);
+   console.log('component did mount !!');
+   this.fetchData(`https://jsonplaceholder.typicode.com/${this.state.source}`);
   }  
   render() {
     return (
-      <div>
-        <h1>React lifeCycle 3 </h1>
+      <div className="App">
+        <h1>React lifeCycle fetch </h1>
+        <h3> {this.state.source}</h3>
+        {this.state.sources.map(item =>{
+          return <button onClick={ ()=> this.updateSource(item) }>{item} </button>
+        })}
+        { this.state.data.length > 0 ? JSON.stringify(this.state.data) : <h4>no data </h4> }
       </div>
     )
   }

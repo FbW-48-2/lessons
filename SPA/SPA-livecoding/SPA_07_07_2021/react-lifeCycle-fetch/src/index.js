@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './App';
+import DataHooks from './DataHooks'
 
 
 ReactDOM.render(
  
-    <App />
+    <DataHooks />
   ,
   document.getElementById('root')
 );
