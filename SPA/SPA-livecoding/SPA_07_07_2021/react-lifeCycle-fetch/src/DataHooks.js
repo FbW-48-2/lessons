@@ -1,7 +1,8 @@
 import React ,{useState , useEffect} from 'react';
-
+import Search from './Components/Search';
 
 function DataHooks() {
+    
     const [source , setSource ] = useState('todos');
     const [sources , setSources ] = useState(['users','todos','photos','albums','comments','posts']);
     const [data , setData] = useState([]);
@@ -21,17 +22,25 @@ function DataHooks() {
         fetchData(`https://jsonplaceholder.typicode.com/${source}`);
       },[] )
 
+      // works once as componentdidmount 
+
+    
+
       useEffect( ()=>{
-        fetchData(`https://jsonplaceholder.typicode.com/${source}`); 
+     fetchData(`https://jsonplaceholder.typicode.com/${source}`); 
       },[source])
+      // works if source state has been updated
+
+
+      // useEffect(()=>{
+      //    console.log(' the state data has been updated....');
+      // },[data ,source] )
 
     return (
         <div className = "App">
             <h1> React Hooks Fetch </h1>
             <h3> {source}</h3>
-            {sources.map(item =>{
-          return <button onClick={ ()=> updateSource(item) }>{item} </button>
-        })}
+           <Search  sources = {sources}  updateSource = {updateSource}/>
          {data.length > 0 ? JSON.stringify(data) : <h4>no data </h4> }
         </div>
     )

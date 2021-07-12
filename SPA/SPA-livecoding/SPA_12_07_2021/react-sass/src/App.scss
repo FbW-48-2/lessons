@@ -1,0 +1,16 @@
+$myColor : #30d4c7;
+
+.App {
+  text-align: center;
+  h1{
+    color : $myColor
+  }
+  p{
+    font-size: 1.3rem;
+  }
+  img {
+    width : 50%;
+  }
+
+}
+
