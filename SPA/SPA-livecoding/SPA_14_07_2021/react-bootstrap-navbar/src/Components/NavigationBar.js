@@ -6,10 +6,11 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 function NavigationBar() {
     return (
-         <Navbar bg="dark" variant="dark" sticky ="top" expand ="sm" collapseOnSelect >
+         <Navbar bg="danger" variant="dark" sticky ="top" expand ="sm" collapseOnSelect >
               
              <Navbar.Brand>
                 <img src={logo}  width="45px" /> 
+                DCI
              </Navbar.Brand>
              <Navbar.Toggle />             
              <Navbar.Collapse>
