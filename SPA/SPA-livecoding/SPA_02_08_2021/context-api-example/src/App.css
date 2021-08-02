@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+}
+.light{
+  color :black;
+  background-color: lightgrey;
+  padding: 25px;
+  font-size: 23px;
+}
+.dark{
+  color:white;
+  background-color: #222;
+  padding: 25px;
+  font-size: 23px;
+}
+footer{
+  height:25px;
+  padding: 20px;
+  font-size: 22px;
+  margin-top:5px
+}
+button{
+  padding: 7px;
+  font-size: 19px;
+}
