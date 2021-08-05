@@ -14,11 +14,12 @@ function ToDoForm() {
     }
     return (
         <form onSubmit= {onSubmit}>
+           
             <div>
             <label> what to do </label>
             <input type="text" onChange={(e)=> setText(e.target.value)} value={text} />
             </div>
-            <button type="submit"> submit </button>            
+            <button type="submit"> submit </button>    
         </form>
     )
 }

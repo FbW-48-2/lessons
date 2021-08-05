@@ -3,12 +3,12 @@ import ToDoContext from '../context/ToDoContext'
 
 
 function TodoView() {
-    const { todos } = useContext(ToDoContext)
+    const { todos , removeTodo } = useContext(ToDoContext)
     return (
 
         <div>
             {todos.map((item , index) => {
-                return <div key = { index}> { item} </div> 
+                return <div onClick = { ()=>{ removeTodo(index)}} key = { index}> { item} </div> 
             })}
         </div>
     )
